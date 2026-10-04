@@ -1,0 +1,8 @@
+version: 1
+type: compose
+compose:
+  file: basic.yml
+  public_service: miniflux
+  port: 8080
+  health_path: /healthcheck
+  base_url_env: BASE_URL
